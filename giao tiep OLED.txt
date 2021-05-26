@@ -1,0 +1,12 @@
+-i2c_master_write_byte
+
+
+- reset oled to set beginning position to display
+- allocate RAM
+- Set font of text , drawing function from GFX
+- create I2C to control oled / chon. I2C addr 0x3C
+- Get base address of display buffer for direct reading or writing
+- refresh display: Push data currently in RAM to SSD1306 display
+- SCROLLING FUNCTIONS: scroll the whole display, run: display.startscrollleft(0x00, 0x0F)
+- send command and setting code to oled 
+- write/display/draw data on display
